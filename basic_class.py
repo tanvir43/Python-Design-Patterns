@@ -6,7 +6,7 @@ class Circle:
         """
         Object Initialization with "radius" parameter
         """
-        self.radius = float(radius)
+        self.radius = int(radius)
 
     def get_area(self):
         """
@@ -21,12 +21,12 @@ class Circle:
         return 2 * math.pi * self.radius
 
 # Creating object from "Circle" class
-circle = Circle("5.00")
+circle = Circle("5")
 
 print(f"Circle radius {circle.radius}")
 
 #Call "get_area()" method from "circle" object
-print(f"Area of the circle is {circle.get_area()}")
+print(f"Area of the circle is {circle.get_area():.2f}")
 
 #Call "get_perimeter" method from "circle" object
-print(f"Perimeter of the circle is {circle.get_perimeter()}")
+print(f"Perimeter of the circle is {circle.get_perimeter():.2f}")
