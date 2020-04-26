@@ -1,5 +1,8 @@
+class BankAccount:
+    def __init__(self, balance):
+        self.__balance = balance
 
-    #Mutator method or setter method i.e setter method is considered as a Mutator method when a class deals with private attribute(self__balance) 
+    #Mutator method or setter method i.e setter method is considered as a Mutator method when a class deals with private attribute(self__balance)
     def deposit(self, amount):
         print("old balance", self.__balance)
         self.__balance += amount
